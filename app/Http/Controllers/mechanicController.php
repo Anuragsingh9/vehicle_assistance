@@ -13,11 +13,12 @@ class mechanicController extends Controller
     }
 
     public function store(Request $request){
-        // dd("ok");
         $insert= new mechanic([
             'name' => $request->get('name'),
             'email'=> $request->get('email'),
-            'phone'=>$request->get('phone')
+            'phone'=>$request->get('phone'),
+            'lat' => $request->get('lat'),
+            'long' => $request->get('long'),
         ]);
             
         $insert->save();
@@ -34,7 +35,6 @@ class mechanicController extends Controller
         // edit a particular resource
 
         $Edit = mechanic::where('id','=', $request->id)->first();
-        // dd($Edit);
         return view('mechupdate' , compact('Edit'));
 
     }
