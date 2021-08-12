@@ -43,6 +43,14 @@
       <label for="phone">Phone:</label>
       <input type="text" class="form-control" id="pwd" placeholder="Enter number" name="phone">
     </div>
+    <div class="form-group">
+      <label for="phone">Lat:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter number" name="lat">
+    </div>
+    <div class="form-group">
+      <label for="phone">long:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter number" name="long">
+    </div>
     <button type="submit" class="btn btn-default">Submitt</button>
   </form>
 </div>
